@@ -1,0 +1,20 @@
+{
+    "scripts": {
+        "build": "npx babel src --out-file dist/bundle.js",
+        "start": "node your-script.js"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.14.3",
+        "@babel/core": "^7.14.3",
+        "@babel/preset-env": "^7.14.4",
+        "babel-preset-minify": "^0.5.1"
+    },
+    "babel": {
+        "presets": ["@babel/preset-env", "minify"],
+        "comments": false
+    },
+    "browserslist": [
+        "> 0.5%",
+        "not dead"
+    ]
+}
